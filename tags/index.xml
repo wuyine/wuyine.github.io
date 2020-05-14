@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Wuyine Blog</title>
+    <link>https://wuyine.github.io/tags/</link>
+    <description>Recent content in Tags on Wuyine Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh_CN</language>
+    <lastBuildDate>Wed, 13 May 2020 22:06:25 +0800</lastBuildDate>
+    
+	<atom:link href="https://wuyine.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>note</title>
+      <link>https://wuyine.github.io/tags/note/</link>
+      <pubDate>Wed, 13 May 2020 22:06:25 +0800</pubDate>
+      
+      <guid>https://wuyine.github.io/tags/note/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

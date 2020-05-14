@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wuyine Blog</title>
+    <link>https://wuyine.github.io/</link>
+    <description>Recent content on Wuyine Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh_CN</language>
+    <lastBuildDate>Wed, 13 May 2020 22:06:25 +0800</lastBuildDate>
+    
+	<atom:link href="https://wuyine.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用Hugo搭建一个博客网站</title>
+      <link>https://wuyine.github.io/post/hugo/</link>
+      <pubDate>Wed, 13 May 2020 22:06:25 +0800</pubDate>
+      
+      <guid>https://wuyine.github.io/post/hugo/</guid>
+      <description>写在前面 工作快四年一直都没写作的习惯，学习的东西都没记录下来，感觉到很长时间没有刚开始编程时的那种进步的快感了，所以搭建一个博客网站来提供一</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wuyine.github.io/search/placeholder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wuyine.github.io/search/placeholder/</guid>
+      <description>Huabing Zhao is an ICT veteran with a passion for open source. He has a solid experience in the telecommunication and information technology industry for more than 17 years. Throughout his career, he has built a number of large-scale, cross-country OSS/BSS platforms/systems and operation tools, most of them are still running in productions. He loves open source and has been contributing to a variety of open source projects, including Istio(Service</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wuyine.github.io/top/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wuyine.github.io/top/about/</guid>
+      <description>about </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wuyine.github.io/top/books/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wuyine.github.io/top/books/</guid>
+      <description>books </description>
+    </item>
+    
+  </channel>
+</rss>

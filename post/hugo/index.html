@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Wuyine Blog">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://wuyine.github.io//img/home-bg-jeep.jpg">
+    <meta property="twitter:image" content="https://wuyine.github.io//img/home-bg-jeep.jpg" />
+    
+
+    
+    <meta name="title" content="使用Hugo搭建一个博客网站" />
+    <meta property="og:title" content="使用Hugo搭建一个博客网站" />
+    <meta property="twitter:title" content="使用Hugo搭建一个博客网站" />
+    
+
+    
+    <meta name="description" content="程序员, 开源爱好者">
+    <meta property="og:description" content="程序员, 开源爱好者" />
+    <meta property="twitter:description" content="程序员, 开源爱好者" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="Blog, 博客, 个人网站, 互联网, Web">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>使用Hugo搭建一个博客网站-Wuyine Blog</title>
+
+    <link rel="canonical" href="/post/hugo/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+	
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+    
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    
+    
+
+    
+    
+    <script src="/js/jquery.min.js"></script>
+    
+    
+    <script src="/js/bootstrap.min.js"></script>
+    
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Wuyine Blog</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">首页</a>
+                    </li>
+                    
+                        
+                        <li>
+                            <a href="/categories/blog">blog</a>
+                        </li>
+                        
+                    
+                    
+		    
+                        <li><a href="/top/books/">书籍</a></li>
+                    
+                        <li><a href="/top/about/">关于</a></li>
+                    
+
+                    
+		    <li>
+                        <a href="/search">搜索 <img src="/img/search.png" height="15" style="cursor: pointer;" alt="Search"></a>
+		    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/post-bg-lake.jpg')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/note" title="note">
+                            note
+                        </a>
+                        
+                    </div>
+                    <h1>使用Hugo搭建一个博客网站</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by 
+                        
+                                Wuyine Blog
+                         
+                        on 
+                        Wednesday, May 13, 2020
+                        
+                        
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-11 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <header>
+                    <h2>TOC</h2>
+                </header>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#写在前面">写在前面</a></li>
+    <li><a href="#hugo-介绍">Hugo 介绍</a>
+      <ul>
+        <li><a href="#hugo安装">Hugo安装</a></li>
+        <li><a href="#使用hugo命令创建网址">使用Hugo命令创建网址</a></li>
+        <li><a href="#添加一个主题">添加一个主题</a></li>
+        <li><a href="#写第一篇博客文章">写第一篇博客文章</a></li>
+        <li><a href="#博客预览">博客预览</a></li>
+        <li><a href="#build">build</a></li>
+      </ul>
+    </li>
+    <li><a href="#将博客网站部署到-github-pages">将博客网站部署到 github pages</a></li>
+  </ul>
+</nav>
+                
+                <h1 id="写在前面">写在前面</h1>
+<p>工作快四年一直都没写作的习惯，学习的东西都没记录下来，感觉到很长时间没有刚开始编程时的那种进步的快感了，所以搭建一个博客网站来提供一个写作的环境，和一个记录自己学习的地方，使用开hugo，也是为了快速的将这个博客网站搭建好。</p>
+<h1 id="hugo-介绍">Hugo 介绍</h1>
+<p>Hugo 是一个使用go语言写的静态生成器，官方文档的描述大概就是Hugo构建速度极快、完全跨平台、开发中支持liveReload、丰富的主题以及部署方便等优点。</p>
+<h2 id="hugo安装">Hugo安装</h2>
+<p>macOS和linux（安装了Homebrew的话）</p>
+<pre><code>brew install hugo
+</code></pre><p>Chocolatey(windows)</p>
+<pre><code>choco install hugo -confirm
+// or if you need the “extended” Sass/SCSS version:
+choco install hugo-extended -confirm 
+</code></pre><p>Scoop (Windows)</p>
+<pre><code>scoop install hugo
+// or if you need the “extended” Sass/SCSS version:
+scoop install hugo-extended
+</code></pre><p>其他安装方式建议阅读<a href="https://gohugo.io/getting-started/installing/">官方文档</a></p>
+<h2 id="使用hugo命令创建网址">使用Hugo命令创建网址</h2>
+<pre><code>hugo new site sitename
+</code></pre><h2 id="添加一个主题">添加一个主题</h2>
+<ol>
+<li>进入<a href="https://themes.gohugo.io/">主题选择页面</a>下载自己喜欢的主题</li>
+<li>将主题代码拷贝到项目下themes目录下</li>
+<li>将theme = &ldquo;ananke&rdquo; 写到 config.toml配置文件中</li>
+</ol>
+<h2 id="写第一篇博客文章">写第一篇博客文章</h2>
+<p>使用 <code>hugo new posts/my-first-post.md</code> 新建一个页面，可以看到在content目录下的posts目录下出现my-first-post.md文件，里面会有以下内容</p>
+<pre><code>---
+title: &quot;My First Post&quot;
+date: 2020-05-13T22:06:25+08:00
+draft: true
+---
+</code></pre><h2 id="博客预览">博客预览</h2>
+<p>终端输入：hugo server -D 可以看到服务器运行成功，打开浏览器输入 <a href="http://localhost:1313/">http://localhost:1313/</a> 即可预览</p>
+<h2 id="build">build</h2>
+<p>运行 <code>hugo</code> 将会把博客文件生成到项目根目录下<code>public</code>目录中</p>
+<h1 id="将博客网站部署到-github-pages">将博客网站部署到 github pages</h1>
+<p>网络上已经有很多教程了，也可以直接阅读<a href="https://pages.github.com/">官方教程</a>，我这里简单的把步骤写下来，自己做个记录。</p>
+<ol>
+<li>在自己的 github 上新建一个仓库，仓库名为 username.github.io；username 为自己的用户名。</li>
+<li>在<code>public</code>目录下</li>
+</ol>
+<pre><code>git init 
+git add .
+git commit -m 'first commit'
+git remote add origin 远程仓库地址
+git push -u origin master
+</code></pre><ol start="3">
+<li>等几分钟就可以访问  https://{your name}.github.io 看到你的博客部署成功了。</li>
+</ol>
+
+
+                
+                
+<div class="entry-shang text-center">
+    
+	    <p>「真诚赞赏，手留余香」</p>
+	
+	<button class="zs show-zs btn btn-bred">赞赏支持</button>
+</div>
+<div class="zs-modal-bg"></div>
+<div class="zs-modal-box">
+	<div class="zs-modal-head">
+		<button type="button" class="close">×</button>
+		<span class="author"><a href="https://wuyine.github.io/"><img src="/img/favicon.png" />Wuyine Blog</a></span>
+        
+	        <p class="tip"><i></i><span>真诚赞赏，手留余香</span></p>
+		
+ 
+	</div>
+	<div class="zs-modal-body">
+		<div class="zs-modal-btns">
+			<button class="btn btn-blink" data-num="2">2元</button>
+			<button class="btn btn-blink" data-num="5">5元</button>
+			<button class="btn btn-blink" data-num="10">10元</button>
+			<button class="btn btn-blink" data-num="50">50元</button>
+			<button class="btn btn-blink" data-num="100">100元</button>
+			<button class="btn btn-blink" data-num="1">任意金额</button>
+		</div>
+		<div class="zs-modal-pay">
+			<button class="btn btn-bred" id="pay-text">2元</button>
+			<p>使用<span id="pay-type">微信</span>扫描二维码完成支付</p>
+			<img src="/img/reward/wechat-2.png"  id="pay-image"/>
+		</div>
+	</div>
+	<div class="zs-modal-footer">
+		<label><input type="radio" name="zs-type" value="wechat" class="zs-type" checked="checked"><span ><span class="zs-wechat"><img src="/img/reward/wechat-btn.png"/></span></label>
+		<label><input type="radio" name="zs-type" value="alipay" class="zs-type" class="zs-alipay"><img src="/img/reward/alipay-btn.png"/></span></label>
+	</div>
+</div>
+<script type="text/javascript" src="/js/reward.js"></script>
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    
+                </ul>
+
+                
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-11 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href=""></a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="Wuyine Blog" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fa fa-circle fa-stack-2x"></i>
+                               <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+                   
+                    
+                    <li>
+                        <a href="mailto:ljlyine@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    <li>
+                        <a target="_blank" href="/your%20wechat%20qr%20code%20image">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-wechat fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/wuyine">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+                </ul>
+		<p class="copyright text-muted">Copyright &copy; Wuyine Blog 2020</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>
