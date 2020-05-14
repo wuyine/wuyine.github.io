@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="" />
-    <meta property="og:title" content="" />
-    <meta property="twitter:title" content="" />
+    <meta name="title" content="video标签问题" />
+    <meta property="og:title" content="video标签问题" />
+    <meta property="twitter:title" content="video标签问题" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="Blog, 博客, 个人网站, 互联网, Web">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Wuyine Blog</title>
+    <title>video标签问题-Wuyine Blog</title>
 
-    <link rel="canonical" href="/top/books/">
+    <link rel="canonical" href="/post/ios-video/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -150,14 +150,37 @@
 
 
 
-<header class="intro-header" style="background-image: url('/img/home-bg-jeep.jpg')">
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/home-bg-jeep.jpg')
+    }
+</style>
+<header class="intro-header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>Wuyine Blog </h1>
-                    
-		    <span class="subheading">路在脚下，心向远方</span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/note" title="note">
+                            note
+                        </a>
+                        
+                    </div>
+                    <h1>video标签问题</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by 
+                        
+                                Wuyine Blog
+                         
+                        on 
+                        Thursday, May 14, 2020
+                        
+                        
+                        
+                    </span>
                 </div>
             </div>
         </div>
@@ -177,7 +200,125 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-         	<h1 id="books">books</h1>
+                
+                <header>
+                    <h2>TOC</h2>
+                </header>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#写在前面">写在前面</a></li>
+    <li><a href="#问题解决">问题解决</a>
+      <ul>
+        <li><a href="#动机">动机</a></li>
+        <li><a href="#webkit-下策略">WebKit 下策略</a></li>
+      </ul>
+    </li>
+    <li><a href="#关于-playsinline-属性">关于 playsinline 属性</a></li>
+  </ul>
+</nav>
+                
+                <h1 id="写在前面">写在前面</h1>
+<p>事情起因是公司官网有几个视频来演示功能的使用，类似于GIF图片一样放在页面中直接播放，然后发现 Iphone 手机中 Safari 浏览器中无法显示。因为自己对这部分知识比较欠缺，所以这里将这个问题记录下来。</p>
+<h1 id="问题解决">问题解决</h1>
+<pre><code>// html
+&lt;video autoplay loop muted&gt;
+  &lt;source src=&quot;testvideo.mp4&quot; type=&quot;video/mp4&quot;&gt;
+&lt;/video&gt;
+</code></pre><p>这个代码在pc端浏览器正常运行，没有什么问题，当运行在 Iphone 手机 Safari 浏览器中时就无法自动播放了。
+经过一番搜索终于在stackoverflow中找到<a href="https://stackoverflow.com/questions/43570460/html5-video-autoplay-on-iphone#">答案</a>，加上<code>playsinline</code>属性完美解决。问题虽然解决了，这部分知识还是需要记录下来。</p>
+<p>早期在 IOS 中的 Safari 浏览器上，为了节省用户的流量和电量媒体数据仅当用户与页面交互时才加载视频数据。后面到 IOS8 中放宽了限制：可以添加<code>preload=&quot;metadata&quot;</code>属性，允许 <code>&lt;video&gt; 和 &lt;audio&gt;</code> 元素加载足够的数据来确定媒体大小以及时长等基本信息。</p>
+<h2 id="动机">动机</h2>
+<p>大家都喜欢在网页中加入GIF。但是GIF与现代视频编解码器相比，GIF格式是一种非常昂贵的动画图像编码方式。GIF的带宽成本可能高达十二倍，而电量使用成本却高达两倍。以至于许多最大的 GIF 提供者都已从GIF转向<code>&lt;video&gt;</code>元素，然而<code>&lt;video&gt;</code>必须要用户触发，尽管节省了网站的带宽成本和用户的电量，但是这是牺牲了用户的可用性为代价的。并且在 iPhone 上，<code>&lt;video&gt;</code> 开始播放时会进入全屏模式，这个场景下非常不友好。</p>
+<blockquote>
+<p>关于用户手势要求的注释：就是导致调用的JavaScript代码 video.play()必须直接来自于用户的触发 一 touchend，click，doubleclick，或keydown事件。因此，button.addEventListener(&lsquo;click&rsquo;, () =&gt; { video.play(); })可以正确触发， video.addEventListener(&lsquo;canplaythrough&rsquo;, () =&gt; { video.play(); })不满足要求，视频不会播放。</p>
+</blockquote>
+<h2 id="webkit-下策略">WebKit 下策略</h2>
+<ul>
+<li>
+<p><code> &lt;video autoplay&gt;</code>对于满足以下条件的<code>autoplay</code>属性将会生效：</p>
+<ul>
+<li><code>&lt;video&gt;</code> 如果元素<code>autoplay</code>的源媒体中不包含音频，则无需用户任何手势即可自动播放。</li>
+<li><code>&lt;video muted&gt; </code>元素也将被允许在没有用户手势的情况下自动播放。</li>
+<li>如果某个<code>&lt;video&gt;</code>元素获得音频或在没有用户手势的情况下变为静音，则播放将暂停。</li>
+<li><code>&lt;video autoplay&gt;</code> 元素仅在屏幕上可见时才开始播放，例如当它们滚动到视口中，通过CSS可见并插入DOM时。</li>
+<li><code>&lt;video autoplay&gt;</code> 如果元素变为不可见，则播放将暂停，例如通过滚动到视口之外。</li>
+</ul>
+</li>
+<li>
+<p><code>&lt;video&gt;</code> 对于满足以下条件<code>play()</code>方法会执行成功：</p>
+<ul>
+<li><code>&lt;video&gt;</code> 如果源媒体中不包含音频，或者<code>muted</code>属性为<code>true</code>，则无需用户任何手势。</li>
+<li>如果某个<code>&lt;video&gt;</code>元素获得音频或在没有用户手势的情况下变为静音，则播放将暂停。</li>
+<li><code> &lt;video&gt;</code>当元素在屏幕上不可见或不在视口中时，将允许<code>play()</code>播放。</li>
+<li>如果不满足这些条件中的任何一个将会返回一个<code>reject</code>的<code>Promise</code>对象。</li>
+</ul>
+</li>
+<li>
+<p>在iPhone上，<code>&lt;video playsinline&gt;</code>现在将允许元素内联播放，并且在开始播放时不会自动进入全屏模式。</p>
+<ul>
+<li><code>&lt;video&gt;</code>没有<code>playsinline</code>属性的元素将继续需要全屏模式才能在iPhone上播放。</li>
+<li>当以捏合手势退出全屏时，<code>&lt;video&gt;</code>元素没有<code>playsinline</code>属性也会继续内联播放。</li>
+</ul>
+</li>
+</ul>
+<h1 id="关于-playsinline-属性">关于 playsinline 属性</h1>
+<blockquote>
+<p>该属性已经添加到HTML规范中，旧版本中可以使用 <code>webkit-playsinline</code></p>
+</blockquote>
+
+
+                
+                
+<div class="entry-shang text-center">
+    
+	    <p>「真诚赞赏，手留余香」</p>
+	
+	<button class="zs show-zs btn btn-bred">赞赏支持</button>
+</div>
+<div class="zs-modal-bg"></div>
+<div class="zs-modal-box">
+	<div class="zs-modal-head">
+		<button type="button" class="close">×</button>
+		<span class="author"><a href="https://wuyine.github.io/"><img src="/img/favicon.png" />Wuyine Blog</a></span>
+        
+	        <p class="tip"><i></i><span>真诚赞赏，手留余香</span></p>
+		
+ 
+	</div>
+	<div class="zs-modal-body">
+		<div class="zs-modal-btns">
+			<button class="btn btn-blink" data-num="2">2元</button>
+			<button class="btn btn-blink" data-num="5">5元</button>
+			<button class="btn btn-blink" data-num="10">10元</button>
+			<button class="btn btn-blink" data-num="50">50元</button>
+			<button class="btn btn-blink" data-num="100">100元</button>
+			<button class="btn btn-blink" data-num="1">任意金额</button>
+		</div>
+		<div class="zs-modal-pay">
+			<button class="btn btn-bred" id="pay-text">2元</button>
+			<p>使用<span id="pay-type">微信</span>扫描二维码完成支付</p>
+			<img src="/img/reward/wechat-2.png"  id="pay-image"/>
+		</div>
+	</div>
+	<div class="zs-modal-footer">
+		<label><input type="radio" name="zs-type" value="wechat" class="zs-type" checked="checked"><span ><span class="zs-wechat"><img src="/img/reward/wechat-btn.png"/></span></label>
+		<label><input type="radio" name="zs-type" value="alipay" class="zs-type" class="zs-alipay"><img src="/img/reward/alipay-btn.png"/></span></label>
+	</div>
+</div>
+<script type="text/javascript" src="/js/reward.js"></script>
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/hugo/" data-toggle="tooltip" data-placement="top" title="使用Hugo搭建一个博客网站">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
 
                 
 <div id="disqus-comment"></div>
@@ -201,7 +342,7 @@
                         
                         
                         <a href="/tags/note" title="note">
-                        note
+                            note
                         </a>
                         
                         
