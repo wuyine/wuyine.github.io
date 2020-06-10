@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="" />
-    <meta property="og:title" content="" />
-    <meta property="twitter:title" content="" />
+    <meta name="title" content="Hailstone" />
+    <meta property="og:title" content="Hailstone" />
+    <meta property="twitter:title" content="Hailstone" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="Blog, 博客, 个人网站, 互联网, Web">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Wuyine Blog</title>
+    <title>Hailstone-Wuyine Blog</title>
 
-    <link rel="canonical" href="/search/placeholder/">
+    <link rel="canonical" href="/post/hailstone/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -157,7 +157,7 @@
 
 <style type="text/css">
     header.intro-header {
-        background-image: url('/img/home-bg-jeep.jpg')
+        background-image: url('/img/post-bg-lake.jpg')
     }
 </style>
 <header class="intro-header">
@@ -167,16 +167,20 @@
                 <div class="post-heading">
                     <div class="tags">
                         
+                        <a class="tag" href="/tags/note" title="note">
+                            note
+                        </a>
+                        
                     </div>
-                    <h1></h1>
+                    <h1>Hailstone</h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
                         Posted by 
                         
-                                Wuyine Blog
+                                 &#34;wuyine&#34;
                          
                         on 
-                        Monday, January 1, 0001
+                        Wednesday, June 10, 2020
                         
                         
                         
@@ -208,30 +212,29 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#talks">Talks</a></li>
+        <li><a href="#算法有穷性">算法有穷性</a></li>
       </ul>
     </li>
   </ul>
 </nav>
                 
-                <p><img src="/img/zhaohuabing.png" alt="">  <strong><em>Huabing Zhao</em></strong> is an ICT veteran with a passion for open source. He has a solid experience in the telecommunication and information technology industry for more than 17 years.</p>
-<p>Throughout his career, he has built a number of large-scale, cross-country OSS/BSS platforms/systems and operation tools, most of them are still running in productions.</p>
-<p>He loves open source and has been contributing to a variety of open source projects, including Istio(Service Mesh <a href="https://istio.io">https://istio.io</a>), ONAP(Open Network Automation Platform <a href="https://wiki.onap.org">https://wiki.onap.org</a>), Hugo(static site generators <a href="https://themes.gohugo.io/hugo-theme-cleanwhite/),">https://themes.gohugo.io/hugo-theme-cleanwhite/),</a> etc.</p>
-<p>He also has strong interests in various tech stuff such as Artificial Intelligence, Cryptocurrencies, Smart Home.</p>
-<p>Huabing holds a BS in Computer Science and Technology from Chongqing University in China.</p>
-<p>Currently, Huabing is working on a 5G NFV&amp;SDN orchestration and management platform, at the same time, he also wears the hat of PTL in ONAP(<a href="http://www.onap.org">http://www.onap.org</a>) open source project.</p>
-<p>He is happy with his current job, but also willing to take new challenges if the opportunity matches his career path.</p>
-<p>While he is not working, he enjoys watching movies, swimming, hiking, travelling, writing blogs and learning languages.</p>
-<p>Feel free to connect Huabing via Github (<a href="https://github.com/zhaohuabing">https://github.com/zhaohuabing</a>) or drop him an email (<a href="mailto:zhaohuabing@gmail.com">zhaohuabing@gmail.com</a>).</p>
-<h2 id="talks">Talks</h2>
-<ul>
-<li>[Service Mesh in Action with ONAP] (<a href="https://www.slideshare.net/HuabingZhao/service-mesh-in-action-with-onap">https://www.slideshare.net/HuabingZhao/service-mesh-in-action-with-onap</a>) GNTC, 南京, 2018</li>
-<li>[MSB to Support Carrier Grade ONAP Microservice Architecture with Service Mesh] (<a href="https://www.slideshare.net/HuabingZhao/msb-to-support-carrier-grade-onap-microservice-architecture-with-service-mesh">https://www.slideshare.net/HuabingZhao/msb-to-support-carrier-grade-onap-microservice-architecture-with-service-mesh</a>) ONS, Los Angeles, 2018</li>
-<li><a href="https://www.slideshare.net/HuabingZhao/microservice-powered-orchestration-126100339">Microservice Powered Orchestration</a> ONS, Santa Clara, 2017</li>
-<li>[MSB Technical Deep Dive and ONAP Use Cases] (<a href="https://www.slideshare.net/HuabingZhao/msb-depp-dive/">https://www.slideshare.net/HuabingZhao/msb-depp-dive/</a>) ONAP Developer Event, New Jersey, 2017</li>
-<li>[Microservice Bus Tutorial] (<a href="https://www.slideshare.net/HuabingZhao/microservice-bus-tutorial">https://www.slideshare.net/HuabingZhao/microservice-bus-tutorial</a>) ONAP Developer Event, Paris, 2017</li>
-</ul>
+                <h2 id="算法有穷性">算法有穷性</h2>
+<p><img src="/img/hailstone.jpg" alt="hailstone"></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#8be9fd;font-style:italic">function</span> hailstone(n) {
+  <span style="color:#8be9fd;font-style:italic">var</span> length <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>;
+  <span style="color:#ff79c6">while</span>( n <span style="color:#ff79c6">&gt;</span> <span style="color:#bd93f9">1</span>) {
+    <span style="color:#ff79c6">if</span> ( n <span style="color:#ff79c6">%</span> <span style="color:#bd93f9">2</span> ) {
+      n <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">3</span> <span style="color:#ff79c6">*</span> n <span style="color:#ff79c6">+</span> <span style="color:#bd93f9">1</span>;
+    } <span style="color:#ff79c6">else</span> {
+      n <span style="color:#ff79c6">/=</span> <span style="color:#bd93f9">2</span>;
+    }
+    length<span style="color:#ff79c6">++</span>;
+  }
+  <span style="color:#ff79c6">return</span> length;
+}
 
+<span style="color:#6272a4">// hailstone(42) = { 42, 21, 64, 32, ..., 1}
+</span></code></pre></div>
 
                 
                 
@@ -277,6 +280,11 @@
 
                 <hr>
                 <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/web-accessibility/" data-toggle="tooltip" data-placement="top" title="web可访问性">&larr;
+                            Previous Post</a>
+                    </li>
                     
                     
                 </ul>

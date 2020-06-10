@@ -6,10 +6,28 @@
     <description>Recent content in note on Wuyine Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_CN</language>
-    <lastBuildDate>Thu, 14 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://wuyine.github.io/tags/note/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hailstone</title>
+      <link>https://wuyine.github.io/post/hailstone/</link>
+      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wuyine.github.io/post/hailstone/</guid>
+      <description>算法有穷性 function hailstone(n) { var length = 1; while( n &amp;gt; 1) { if ( n % 2 ) { n = 3 * n + 1; } else { n /= 2; } length++; } return length; } // hailstone(42) = { 42, 21, 64, 32, ..., 1}</description>
+    </item>
+    
+    <item>
+      <title>web可访问性</title>
+      <link>https://wuyine.github.io/post/web-accessibility/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wuyine.github.io/post/web-accessibility/</guid>
+      <description>什么是可访问性 可访问性是一种让尽可能多的用户可以使用我们网站的做法。比如那些有视觉障碍、听觉障碍或者是行动障碍的人群，提升网站的可访问性会帮</description>
+    </item>
     
     <item>
       <title>video标签问题</title>
