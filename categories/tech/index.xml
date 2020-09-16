@@ -6,10 +6,19 @@
     <description>Recent content in Tech on Wuyine Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_CN</language>
-    <lastBuildDate>Wed, 10 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://wuyine.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Charles抓包工具安装使用</title>
+      <link>https://wuyine.github.io/post/charles/</link>
+      <pubDate>Fri, 10 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wuyine.github.io/post/charles/</guid>
+      <description>安装 进入官网下载对应系统Charles安装包。 配置 进入Charles Proxy -&amp;gt; macOS Proxy 勾选， 就可以看到代理设置了 看不到 Response Charles -&amp;gt; Preferences -&amp;gt; Viewers -&amp;gt; Combine request and response 取消勾选 h</description>
+    </item>
     
     <item>
       <title>Hailstone</title>

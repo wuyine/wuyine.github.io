@@ -6,10 +6,28 @@
     <description>Recent content in note on Wuyine Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_CN</language>
-    <lastBuildDate>Wed, 10 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://wuyine.github.io/tags/note/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>git 使用记录</title>
+      <link>https://wuyine.github.io/post/git/</link>
+      <pubDate>Wed, 02 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wuyine.github.io/post/git/</guid>
+      <description>git diff usage: git diff [&amp;lt;options&amp;gt;] [&amp;lt;commit&amp;gt; [&amp;lt;commit&amp;gt;]] [--] [&amp;lt;path&amp;gt;...] 可以看到 git 的使用方法，具体使用记录 比较当前分支与其他分支 git diff branch 比较当前分支与其他分支的具体某个模板 git diff branch -- path 比较任意分支</description>
+    </item>
+    
+    <item>
+      <title>Charles抓包工具安装使用</title>
+      <link>https://wuyine.github.io/post/charles/</link>
+      <pubDate>Fri, 10 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wuyine.github.io/post/charles/</guid>
+      <description>安装 进入官网下载对应系统Charles安装包。 配置 进入Charles Proxy -&amp;gt; macOS Proxy 勾选， 就可以看到代理设置了 看不到 Response Charles -&amp;gt; Preferences -&amp;gt; Viewers -&amp;gt; Combine request and response 取消勾选 h</description>
+    </item>
     
     <item>
       <title>Hailstone</title>
@@ -27,6 +45,15 @@
       
       <guid>https://wuyine.github.io/post/web-accessibility/</guid>
       <description>什么是可访问性 可访问性是一种让尽可能多的用户可以使用我们网站的做法。比如那些有视觉障碍、听觉障碍或者是行动障碍的人群，提升网站的可访问性会帮</description>
+    </item>
+    
+    <item>
+      <title>Mac 环境下 shell 脚本 map 问题</title>
+      <link>https://wuyine.github.io/post/macos-bash-error/</link>
+      <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wuyine.github.io/post/macos-bash-error/</guid>
+      <description>declare: usage: declare [-afFirtx] [-p] [name[=value] &amp;hellip;] bash 版本不支持 map 数据结构，切换成 zsh 搞定</description>
     </item>
     
     <item>
