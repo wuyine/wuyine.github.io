@@ -39,6 +39,15 @@
     </item>
     
     <item>
+      <title>mysql中，schema的概念 - （摘抄）</title>
+      <link>https://wuyine.github.io/post/mysql-schem/</link>
+      <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wuyine.github.io/post/mysql-schem/</guid>
+      <description>mysql中，怎么理解schema的概念，schema是数据库的组织和结构，是数据库对象的集合，集合包括表，视图，储存过程，索引等。 data</description>
+    </item>
+    
+    <item>
       <title>video标签问题</title>
       <link>https://wuyine.github.io/post/ios-video/</link>
       <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
