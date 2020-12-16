@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Wuyine Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_CN</language>
-    <lastBuildDate>Wed, 02 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 16 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://wuyine.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tech</title>
+      <link>https://wuyine.github.io/categories/tech/</link>
+      <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wuyine.github.io/categories/tech/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>blog</title>
@@ -17,15 +26,6 @@
       <pubDate>Wed, 02 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://wuyine.github.io/categories/blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tech</title>
-      <link>https://wuyine.github.io/categories/tech/</link>
-      <pubDate>Fri, 10 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://wuyine.github.io/categories/tech/</guid>
       <description></description>
     </item>
     

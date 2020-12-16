@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="Tech" />
-    <meta property="og:title" content="Tech" />
-    <meta property="twitter:title" content="Tech" />
+    <meta name="title" content="Apache 代理配置" />
+    <meta property="og:title" content="Apache 代理配置" />
+    <meta property="twitter:title" content="Apache 代理配置" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="Blog, 博客, 个人网站, 互联网, Web">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Tech-Wuyine Blog</title>
+    <title>Apache 代理配置-Wuyine Blog</title>
 
-    <link rel="canonical" href="/categories/tech/">
+    <link rel="canonical" href="/post/apache-proxy/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -154,14 +154,37 @@
 
 
 
-<header class="intro-header" style="background-image: url('/img/home-bg-jeep.jpg')">
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/post-bg-lake.jpg')
+    }
+</style>
+<header class="intro-header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>Wuyine Blog </h1>
-                    
-		    <span class="subheading">路在脚下，心向远方</span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/note" title="note">
+                            note
+                        </a>
+                        
+                    </div>
+                    <h1>Apache 代理配置</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by 
+                        
+                                 &#34;wuyine&#34;
+                         
+                        on 
+                        Wednesday, December 16, 2020
+                        
+                        
+                        
+                    </span>
                 </div>
             </div>
         </div>
@@ -170,221 +193,132 @@
 
 
 
-  
-<div class="container">
-    <div class="row">
-        
-        
-   	    <div class="
-            col-lg-8 col-lg-offset-1
-            col-md-8 col-md-offset-1
-            col-sm-12
-            col-xs-12
-            post-container
-        ">
-            
 
-<div class="post-preview">
-    <a href="https://wuyine.github.io/post/apache-proxy/">
-        <h2 class="post-title">
-            Apache 代理配置
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            ProxyPass /nc/front/ http://127.0.0.1:8000/ 路径配置 ProxyPassMatch ^/nc/(.*) http://127.0.0.1:8000/$1 正则匹配
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    Posted by      &#34;wuyine&#34; Wednesday, December 16, 2020
-    
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://wuyine.github.io/post/eggjs/">
-        <h2 class="post-title">
-            Eggjs 使用记录
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            问题1：开发环境EGG_SERVER_ENV=dev egg-bin dev 编辑代码不会热更新代码 解决方案：删除EGG_SERVER_ENV=dev即可，原因未
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    Posted by      &#34;wuyine&#34; Monday, December 14, 2020
-    
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://wuyine.github.io/post/charles/">
-        <h2 class="post-title">
-            Charles抓包工具安装使用
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            安装 进入官网下载对应系统Charles安装包。 配置 进入Charles Proxy -&gt; macOS Proxy 勾选， 就可以看到代理设置了 看不到 Response Charles -&gt; Preferences -&gt; Viewers -&gt; Combine request and response 取消勾选 h
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    Posted by      &#34;wuyine&#34; Friday, July 10, 2020
-    
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://wuyine.github.io/post/hailstone/">
-        <h2 class="post-title">
-            Hailstone
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            算法有穷性 function hailstone(n) { var length = 1; while( n &gt; 1) { if ( n % 2 ) { n = 3 * n + 1; } else { n /= 2; } length++; } return length; } // hailstone(42) = { 42, 21, 64, 32, ..., 1}
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    Posted by      &#34;wuyine&#34; Wednesday, June 10, 2020
-    
-    
-    </p>
-
-</div>
-<hr>
-
+<article>
+    <div class="container">
+        <div class="row">
 
             
+            <div class="
+                col-lg-11 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                post-container">
 
-
-
-       	</div>
-        
-
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-    
-    <section>
-        <hr class="hidden-sm hidden-xs">
-        <h5>FEATURED TAGS</h5>
-        <div class="tags">
-             
-            
                 
-                    <a href="/tags/note" title="note">
-                        note
-                    </a>
+                <header>
+                    <h2>TOC</h2>
+                </header>
+                <nav id="TableOfContents"></nav>
                 
-            
-        </div>
-    </section>
-    
+                <ol>
+<li>
+<p>ProxyPass /nc/front/ http://127.0.0.1:8000/ 路径配置</p>
+</li>
+<li>
+<p>ProxyPassMatch ^/nc/(.*) http://127.0.0.1:8000/$1 正则匹配</p>
+</li>
+</ol>
 
-    
-	
-    <section class="visible-md visible-lg">
-	<hr><h5><a href="/top/about">ABOUT ME</a></h5>
-        <div class="short-about">
-            
-            <a href="/top/about">
-               <img src="/img/wuyine.png" alt="avatar" style="cursor: pointer" />
-            </a>
-            
-            
-                <p>Software Developer, Open Source Enthusiast and Life Adventurer</p>
-            
-           
-           <ul class="list-inline"> 
-               
-               <li>
-                   <a href='/categories/tech/index.xml' rel="alternate" type="application/rss+xml" title="Wuyine Blog" >
-                       <span class="fa-stack fa-lg">
-                           <i class="fa fa-circle fa-stack-2x"></i>
-                           <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               
-               
-               
-               
-               <li>
-                   <a target="_blank" href="/your%20wechat%20qr%20code%20image">
-                       <span class="fa-stack fa-lg">
-                           <i class="fa fa-circle fa-stack-2x"></i>
-                           <i class="fa fa-wechat fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               <li>
-                   <a target="_blank" href="https://github.com/wuyine">
-                       <span class="fa-stack fa-lg">
-                           <i class="fa fa-circle fa-stack-2x"></i>
-                           <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               
-               
-               
-               
-            
-            
-               
-               
-               
-               
-                </ul>
-            </div>
-    </section>
-	
-    
-    
-    <section>
-        <hr class="hidden-sm hidden-xs">
-        <h5>FRIENDS</h5>
-        <ul class="list-inline">
-            
-            <li><a target="_blank" href="/"></a></li>
-            
-        </ul>
-    </section>
-    
 
+                
+                
+<div class="entry-shang text-center">
     
-    
+	    <p>「真诚赞赏，手留余香」</p>
+	
+	<button class="zs show-zs btn btn-bred">赞赏支持</button>
 </div>
-
+<div class="zs-modal-bg"></div>
+<div class="zs-modal-box">
+	<div class="zs-modal-head">
+		<button type="button" class="close">×</button>
+		<span class="author"><a href="https://wuyine.github.io/"><img src="/img/favicon.png" />Wuyine Blog</a></span>
+        
+	        <p class="tip"><i></i><span>真诚赞赏，手留余香</span></p>
+		
+ 
+	</div>
+	<div class="zs-modal-body">
+		<div class="zs-modal-btns">
+			<button class="btn btn-blink" data-num="2">2元</button>
+			<button class="btn btn-blink" data-num="5">5元</button>
+			<button class="btn btn-blink" data-num="10">10元</button>
+			<button class="btn btn-blink" data-num="50">50元</button>
+			<button class="btn btn-blink" data-num="100">100元</button>
+			<button class="btn btn-blink" data-num="1">任意金额</button>
+		</div>
+		<div class="zs-modal-pay">
+			<button class="btn btn-bred" id="pay-text">2元</button>
+			<p>使用<span id="pay-type">微信</span>扫描二维码完成支付</p>
+			<img src="/img/reward/wechat-2.png"  id="pay-image"/>
+		</div>
+	</div>
+	<div class="zs-modal-footer">
+		<label><input type="radio" name="zs-type" value="wechat" class="zs-type" checked="checked"><span ><span class="zs-wechat"><img src="/img/reward/wechat-btn.png"/></span></label>
+		<label><input type="radio" name="zs-type" value="alipay" class="zs-type" class="zs-alipay"><img src="/img/reward/alipay-btn.png"/></span></label>
 	</div>
 </div>
+<script type="text/javascript" src="/js/reward.js"></script>
 
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/eggjs/" data-toggle="tooltip" data-placement="top" title="Eggjs 使用记录">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+
+                
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-11 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        <a href="/tags/note" title="note">
+                            note
+                        </a>
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href=""></a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
 
 
 
@@ -396,7 +330,7 @@
                 <ul class="list-inline text-center">
                    
                    <li>
-                       <a href='/categories/tech/index.xml' rel="alternate" type="application/rss+xml" title="Wuyine Blog" >
+                       <a href='' rel="alternate" type="application/rss+xml" title="Wuyine Blog" >
                            <span class="fa-stack fa-lg">
                                <i class="fa fa-circle fa-stack-2x"></i>
                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>

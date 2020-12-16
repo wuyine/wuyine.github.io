@@ -3,12 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://wuyine.github.io/categories/blog/</loc>
-    <lastmod>2020-09-02T00:00:00+00:00</lastmod>
+    <loc>https://wuyine.github.io/post/apache-proxy/</loc>
+    <lastmod>2020-12-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://wuyine.github.io/categories/</loc>
+    <lastmod>2020-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wuyine.github.io/tags/note/</loc>
+    <lastmod>2020-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wuyine.github.io/post/</loc>
+    <lastmod>2020-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wuyine.github.io/tags/</loc>
+    <lastmod>2020-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wuyine.github.io/categories/tech/</loc>
+    <lastmod>2020-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wuyine.github.io/</loc>
+    <lastmod>2020-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wuyine.github.io/post/eggjs/</loc>
+    <lastmod>2020-12-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wuyine.github.io/categories/blog/</loc>
     <lastmod>2020-09-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -18,32 +53,7 @@
   </url>
   
   <url>
-    <loc>https://wuyine.github.io/tags/note/</loc>
-    <lastmod>2020-09-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wuyine.github.io/post/</loc>
-    <lastmod>2020-09-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wuyine.github.io/tags/</loc>
-    <lastmod>2020-09-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wuyine.github.io/</loc>
-    <lastmod>2020-09-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://wuyine.github.io/post/charles/</loc>
-    <lastmod>2020-07-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wuyine.github.io/categories/tech/</loc>
     <lastmod>2020-07-10T00:00:00+00:00</lastmod>
   </url>
   

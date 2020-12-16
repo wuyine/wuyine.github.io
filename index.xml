@@ -6,10 +6,28 @@
     <description>Recent content on Wuyine Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_CN</language>
-    <lastBuildDate>Wed, 02 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 16 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://wuyine.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Apache 代理配置</title>
+      <link>https://wuyine.github.io/post/apache-proxy/</link>
+      <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wuyine.github.io/post/apache-proxy/</guid>
+      <description>ProxyPass /nc/front/ http://127.0.0.1:8000/ 路径配置 ProxyPassMatch ^/nc/(.*) http://127.0.0.1:8000/$1 正则匹配</description>
+    </item>
+    
+    <item>
+      <title>Eggjs 使用记录</title>
+      <link>https://wuyine.github.io/post/eggjs/</link>
+      <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wuyine.github.io/post/eggjs/</guid>
+      <description>问题1：开发环境EGG_SERVER_ENV=dev egg-bin dev 编辑代码不会热更新代码 解决方案：删除EGG_SERVER_ENV=dev即可，原因未</description>
+    </item>
     
     <item>
       <title>git 使用记录</title>
