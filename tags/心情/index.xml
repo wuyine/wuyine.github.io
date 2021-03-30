@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>心情 on Wuyine Blog</title>
+    <link>https://wuyine.github.io/tags/%E5%BF%83%E6%83%85/</link>
+    <description>Recent content in 心情 on Wuyine Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh_CN</language>
+    <lastBuildDate>Wed, 16 Dec 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wuyine.github.io/tags/%E5%BF%83%E6%83%85/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>坎坷的一年</title>
+      <link>https://wuyine.github.io/post/life-2020/</link>
+      <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wuyine.github.io/post/life-2020/</guid>
+      <description>今年发生了太多事情，有些事每次想起来都很沉重难过。</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,10 +6,19 @@
     <description>Recent content on Wuyine Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_CN</language>
-    <lastBuildDate>Wed, 16 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Feb 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://wuyine.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>学习笔记</title>
+      <link>https://wuyine.github.io/post/note/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://wuyine.github.io/post/note/</guid>
+      <description>位运算 符号 描述 运算规则 &amp;amp; 与 两个都为1时，结果为1 \ 或 两个都为0时，结果才为0 ^ 异或 相同为0，否则为1</description>
+    </item>
     
     <item>
       <title>Apache 代理配置</title>
@@ -18,6 +27,15 @@
       
       <guid>https://wuyine.github.io/post/apache-proxy/</guid>
       <description>ProxyPass /nc/front/ http://127.0.0.1:8000/ 路径配置 ProxyPassMatch ^/nc/(.*) http://127.0.0.1:8000/$1 正则匹配</description>
+    </item>
+    
+    <item>
+      <title>坎坷的一年</title>
+      <link>https://wuyine.github.io/post/life-2020/</link>
+      <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wuyine.github.io/post/life-2020/</guid>
+      <description>今年发生了太多事情，有些事每次想起来都很沉重难过。</description>
     </item>
     
     <item>
@@ -30,12 +48,12 @@
     </item>
     
     <item>
-      <title>git 使用记录</title>
+      <title>CKEditor 空格问题</title>
       <link>https://wuyine.github.io/post/git/</link>
       <pubDate>Wed, 02 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://wuyine.github.io/post/git/</guid>
-      <description>git diff usage: git diff [&amp;lt;options&amp;gt;] [&amp;lt;commit&amp;gt; [&amp;lt;commit&amp;gt;]] [--] [&amp;lt;path&amp;gt;...] 可以看到 git 的使用方法，具体使用记录 比较当前分支与其他分支 git diff branch 比较当前分支与其他分支的具体某个模板 git diff branch -- path 比较任意分支</description>
+      <description>CKEditor 空格问题 一直发现 CKEditor 的空格是&amp;amp;nbsp 和 空格间隔 html 中连续空格浏览器会合并渲染 连续 无法换行 所以使用空格 间隔</description>
     </item>
     
     <item>
@@ -99,6 +117,15 @@
       
       <guid>https://wuyine.github.io/post/hugo/</guid>
       <description>工作快四年一直都没写作的习惯，学习的东西都没记录下来，感觉到很长时间没有刚开始编程时的那种进步的快感了，所以搭建一个博客网站来提供一个写作的</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wuyine.github.io/post/ckedit%E7%A9%BA%E6%A0%BC%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wuyine.github.io/post/ckedit%E7%A9%BA%E6%A0%BC%E9%97%AE%E9%A2%98/</guid>
+      <description></description>
     </item>
     
     <item>

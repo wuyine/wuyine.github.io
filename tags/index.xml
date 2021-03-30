@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Wuyine Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_CN</language>
-    <lastBuildDate>Wed, 16 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Feb 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://wuyine.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>note</title>
       <link>https://wuyine.github.io/tags/note/</link>
-      <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>https://wuyine.github.io/tags/note/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>心情</title>
+      <link>https://wuyine.github.io/tags/%E5%BF%83%E6%83%85/</link>
+      <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wuyine.github.io/tags/%E5%BF%83%E6%83%85/</guid>
       <description></description>
     </item>
     

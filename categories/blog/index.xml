@@ -6,18 +6,27 @@
     <description>Recent content in blog on Wuyine Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_CN</language>
-    <lastBuildDate>Wed, 02 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 16 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://wuyine.github.io/categories/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>git 使用记录</title>
+      <title>坎坷的一年</title>
+      <link>https://wuyine.github.io/post/life-2020/</link>
+      <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wuyine.github.io/post/life-2020/</guid>
+      <description>今年发生了太多事情，有些事每次想起来都很沉重难过。</description>
+    </item>
+    
+    <item>
+      <title>CKEditor 空格问题</title>
       <link>https://wuyine.github.io/post/git/</link>
       <pubDate>Wed, 02 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://wuyine.github.io/post/git/</guid>
-      <description>git diff usage: git diff [&amp;lt;options&amp;gt;] [&amp;lt;commit&amp;gt; [&amp;lt;commit&amp;gt;]] [--] [&amp;lt;path&amp;gt;...] 可以看到 git 的使用方法，具体使用记录 比较当前分支与其他分支 git diff branch 比较当前分支与其他分支的具体某个模板 git diff branch -- path 比较任意分支</description>
+      <description>CKEditor 空格问题 一直发现 CKEditor 的空格是&amp;amp;nbsp 和 空格间隔 html 中连续空格浏览器会合并渲染 连续 无法换行 所以使用空格 间隔</description>
     </item>
     
     <item>

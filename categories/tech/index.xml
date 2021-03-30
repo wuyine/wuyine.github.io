@@ -6,10 +6,19 @@
     <description>Recent content in Tech on Wuyine Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_CN</language>
-    <lastBuildDate>Wed, 16 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Feb 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://wuyine.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>学习笔记</title>
+      <link>https://wuyine.github.io/post/note/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://wuyine.github.io/post/note/</guid>
+      <description>位运算 符号 描述 运算规则 &amp;amp; 与 两个都为1时，结果为1 \ 或 两个都为0时，结果才为0 ^ 异或 相同为0，否则为1</description>
+    </item>
     
     <item>
       <title>Apache 代理配置</title>
